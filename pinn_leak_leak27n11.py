@@ -283,7 +283,7 @@ model = PINNs( lb, ub, layers).to(device) # PINN model
 uname = name+f"layers{len(layers)}_wd_{model.wd}"
 print(uname)
 
-model.trainNN(1000000) # training
+model.trainNN(500000) # training
 #model.trainNN(200000) # training
 
 
